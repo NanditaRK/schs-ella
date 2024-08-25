@@ -1,8 +1,18 @@
-import Image from 'next/image';
+'use client';
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import caretLeft from '../../../public/caret-left.png';
-import caretRight from '../../../public/caret-right.png'
+import caretRight from '../../../public/caret-right.png';
+
+// Dynamically import react-pdf components with SSR disabled
+const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { ssr: false });
+const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
+
+const { pdfjs } = require('react-pdf');
+
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@4.4.168/legacy/build/pdf.worker.min.mjs`;
+
 interface PdfViewerProps {
   file: string | File | null;
 }
@@ -38,26 +48,28 @@ export default function PdfViewer({ file }: PdfViewerProps) {
       >
         <Page className="rounded-box" width={280} scale={1.15} pageNumber={pageNumber} />
       </Document>
-      <div className='mx-auto'>
-        <p className='text-center'>
+      <div className="mx-auto text-center mt-4">
+        <p>
           Page {pageNumber} of {numPages || '--'}
         </p>
-        <button
-            className='btn rounded-full'
-          type="button"
-          disabled={pageNumber <= 1}
-          onClick={previousPage}
-        >
-          <Image src={caretLeft} width={10} height={10} alt='previous page' />
-        </button>
-        <button
-          className='btn rounded-full'
-          type="button"
-          disabled={numPages === null || pageNumber >= numPages}
-          onClick={nextPage}
-        >
-         <Image src={caretRight} width={10} height={10} alt='next page' />
-        </button>
+        <div className="flex justify-center space-x-4">
+          <button
+            className="btn rounded-full"
+            type="button"
+            disabled={pageNumber <= 1}
+            onClick={previousPage}
+          >
+            <Image src={caretLeft} width={10} height={10} alt="previous page" />
+          </button>
+          <button
+            className="btn rounded-full"
+            type="button"
+            disabled={numPages === null || pageNumber >= numPages}
+            onClick={nextPage}
+          >
+            <Image src={caretRight} width={10} height={10} alt="next page" />
+          </button>
+        </div>
       </div>
     </>
   );

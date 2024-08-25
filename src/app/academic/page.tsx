@@ -1,14 +1,9 @@
-'use client'
 
 import React from 'react'
 import Navbar from '../components/Navbar';
-import { Document, Page } from 'react-pdf'
-import { pdfjs } from 'react-pdf';
-import PdfViewer from '../components/PdfViewer';
 
-const Fall = () => {
+const Academic = () => {
     
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
     
 
   return (
@@ -86,4 +81,4 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
   )
 }
 
-export default Fall;
+export default Academic;
