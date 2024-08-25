@@ -1,17 +1,16 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import caretLeft from '../../../public/caret-left.png';
 import caretRight from '../../../public/caret-right.png';
+import { pdfjs, DocumentProps } from 'react-pdf';
 
 // Dynamically import react-pdf components with SSR disabled
-const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { ssr: false });
-const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
-
-const { pdfjs } = require('react-pdf');
-
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@4.4.168/legacy/build/pdf.worker.min.mjs`;
+const Document = dynamic<DocumentProps>(() => import('react-pdf').then((mod) => mod.Document), {
+  ssr: false,
+});
+const Page = dynamic(() => import('react-pdf').then((mod) => mod.Page), { ssr: false });
 
 interface PdfViewerProps {
   file: string | File | null;
@@ -21,22 +20,22 @@ export default function PdfViewer({ file }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState<number>(1);
 
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
+  useEffect(() => {
+    pdfjs.GlobalWorkerOptions.workerSrc =
+      'https://unpkg.com/pdfjs-dist@4.4.168/legacy/build/pdf.worker.min.mjs';
+  }, []);
+
+  const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
     setPageNumber(1);
-  }
+  };
 
-  function changePage(offset: number) {
-    setPageNumber(prevPageNumber => prevPageNumber + offset);
-  }
+  const changePage = (offset: number) => {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  };
 
-  function previousPage() {
-    changePage(-1);
-  }
-
-  function nextPage() {
-    changePage(1);
-  }
+  const previousPage = () => changePage(-1);
+  const nextPage = () => changePage(1);
 
   return (
     <>
