@@ -12,3 +12,41 @@
 .hiddenCanvasElement{
     display: none;
 }
+
+/* Hide the default Google Translate dropdown */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Hide the Google Translate toolbar */
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: none !important;
+    height: auto !important;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom styling for the Translate button */
+.custom-translate-button {
+    background-color: #1a73e8; /* Google Blue */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Align to the right in the flex container */
+  }
+  
+  .custom-translate-button:hover {
+    background-color: #0056b3;
+  }
+  

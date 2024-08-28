@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import caret from '../../../public/caret-down.png';
@@ -12,6 +12,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  
   return (
     <nav className='relative'>
       <ul className='flex justify-between p-4 border-b-4 border-b-main bg-white'>
@@ -66,8 +67,11 @@ const Navbar = () => {
           <Link className='duration-500 text-bold hover:border hover:border-b-4 hover:border-b-main border-white p-4 md:p-0' href='/testimonials'>
             <div>Testimonials</div>
           </Link>
+          
         </div>
+        <div id="google_translate_element"></div>
       </ul>
+      
     </nav>
   );
 };
