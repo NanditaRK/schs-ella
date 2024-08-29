@@ -13,7 +13,7 @@ const Testimonials = () => {
         <div
   className="hero min-h-[50vh]"
   style={{
-    backgroundImage: "url(/ella-bg-tint-black.png)",
+    backgroundImage: "url(/bg-ella-new.png)",
   }}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-neutral-content text-center">
