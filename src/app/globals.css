@@ -52,7 +52,7 @@ body {
   
 li::marker{
     color: #246C94;
-    
+    margin-right: 24px;
     font-size: 28px;
     display: flex;
     align-items: center;

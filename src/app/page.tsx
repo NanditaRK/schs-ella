@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -71,7 +72,7 @@ export default function Home() {
           <p className="mb-5">
           We are a community of educators, staff, and supporters at Silver Creek High School committed to <span> empowering Latino students and their families</span>.
           </p>
-          <button className="btn bg-main hover:bg-white hover:text-main border-none text-white bold rounded-full h-22 text-lg  w-48 btn-hover mt-24">Learn more </button>
+          <Link href="/about"><button className="btn bg-main hover:bg-white hover:text-main border-none text-white bold rounded-btn h-22 text-lg  w-48 btn-hover mt-24">Learn more </button></Link>
         </div>
       </div>
     </div>

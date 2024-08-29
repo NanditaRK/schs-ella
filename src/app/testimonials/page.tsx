@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <figure>
                     <img
                     src="/presidentes.png"
-                    alt="Ms. Navarro" />
+                    alt="Presidents" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Presidents</h2>
@@ -49,7 +49,7 @@ const Testimonials = () => {
                 <figure>
                     <img
                     src="/vicepresidentes.png"
-                    alt="Ms. Nguyen" />
+                    alt="Vice Presidents" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Vice Presidents</h2>
@@ -64,7 +64,7 @@ const Testimonials = () => {
                     <img
                     className=''
                     src="/tesorores.png"
-                    alt="Ms. Mendoza" />
+                    alt="Treasurers" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Treasurers</h2>
@@ -81,7 +81,7 @@ const Testimonials = () => {
                 <figure>
                     <img
                     src="/secretarios.png"
-                    alt="Mr. Anchondo" />
+                    alt="Secretaries" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Secretaries</h2>
@@ -94,7 +94,7 @@ const Testimonials = () => {
                 <figure>
                     <img
                     src="/representantes.png"
-                    alt="Mr. Camacho" />
+                    alt="Representatives" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Representatives</h2>

@@ -63,24 +63,24 @@ const About = () => {
   <h1 id="benefits" className="text-6xl text-main  text-center m-8 my-12 font-bold">Benefits</h1>
   <div className='flex flex-wrap w-3/4 mx-auto'>
     <div className='flex flex-col w-48 justify-start m-8'>
-        <div className='text-6xl text-main item-start text-center'>1.</div>
-        <div className='text-center text-2xl m-8'>Collaboration amongst teachers and counselors</div>
+        <div className='text-6xl font-bold text-main item-start text-center'>1.</div>
+        <div className='text-center text-xl m-8'>Collaboration amongst teachers and counselors</div>
     </div>
     <div className='flex flex-col w-48 justify-start m-8'>
-        <div className='text-6xl text-main item-start bold text-center'>2.</div>
-        <div className='text-center text-2xl m-8'>Parent meetings</div>
+        <div className='text-6xl font-bold text-main item-start bold text-center'>2.</div>
+        <div className='text-center text-xl m-8'>Parent meetings</div>
     </div>
     <div className='flex flex-col w-48 justify-start m-8'>
-        <div className='text-6xl text-main item-start bold text-center'>3.</div>
-        <div className='text-center text-2xl m-8'>Community service opportunities</div>
+        <div className='text-6xl font-bold text-main item-start bold text-center'>3.</div>
+        <div className='text-center text-xl m-8'>Community service opportunities</div>
     </div>
     <div className='flex flex-col w-48 justify-start m-8'>
-        <div className='text-6xl text-main item-start text-center'>4.</div>
-        <div className='text-center text-2xl m-8'>Field trips</div>
+        <div className='text-6xl font-bold text-main item-start text-center'>4.</div>
+        <div className='text-center text-xl m-8'>Field trips</div>
     </div>
     <div className='flex flex-col w-48 justify-start m-8'>
-        <div className='text-6xl text-main text-center'>5.</div>
-        <div className='text-center text-2xl m-8'>Outside presenters</div>
+        <div className='text-6xl font-bold text-main text-center'>5.</div>
+        <div className='text-center text-xl m-8'>Outside presenters</div>
     </div>
 
     
