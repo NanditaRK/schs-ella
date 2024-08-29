@@ -50,3 +50,12 @@ body {
     background-color: #0056b3;
   }
   
+li::marker{
+    color: #246C94;
+    
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    
+}

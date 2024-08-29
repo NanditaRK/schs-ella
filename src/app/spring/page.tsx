@@ -29,11 +29,11 @@ const Spring = () => {
         <div className='flex justify-evenly flex-wrap my-0'>
           {/* Card 1 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"SCHS Transcript Analysis _ Course Scheduling STUDENTS.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">January 26, 2024</h2>
+              <h2 className="card-title">January 24, 2025</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1zcmt3UHMFTqWxz-OIkaGegtJGgfbwpSRVxBbKbv1CG4/edit#slide=id.g266d14d21ab_0_5'>
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -42,11 +42,11 @@ const Spring = () => {
 
           {/* Card 2 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"2_16LPC  2024.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">February 16, 2024</h2>
+              <h2 className="card-title">February 28, 2025</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1sEgbHe00zybFKkRbUIm4KDIWCteq6uhmHY-1jmMwiBk/edit#slide=id.p1'>
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -55,11 +55,11 @@ const Spring = () => {
 
           {/* Card 3 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"4_26 Latino Parent Presentation.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">April 26, 2024</h2>
+              <h2 className="card-title">March 28, 2025</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/13xZSfHT5cNWYiyk4tN8rf3ko1kJ61vX8PEwbpMt9py8/edit#slide=id.ga073618e60_0_16'>
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -68,11 +68,24 @@ const Spring = () => {
 
           {/* Card 4 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"17 de mayo Junta de padres latinos.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">May 17, 2024</h2>
+              <h2 className="card-title">April 11, 2025</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1PAE0EV-nJcA457mIw0TQtZWWakdjfJz0OkNkVHRk7-4/edit'>
+                <a target="_blank" href='#'>
+                  <button className="btn bg-main text-white rounded-box">View</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
+            <PdfViewer file={"checkback.pdf"} />
+            <div className="card-body">
+              <h2 className="card-title">May 16, 2025</h2>
+              <div className="card-actions justify-end">
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>

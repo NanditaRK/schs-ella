@@ -29,11 +29,11 @@ const Fall = () => {
         <div className='flex justify-evenly flex-wrap my-0'>
           {/* Card 1 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"test.pdf"} />
+            <PdfViewer file={"8_30 LPC meeting.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">September 22, 2023</h2>
+              <h2 className="card-title">August 30, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://drive.google.com/file/d/1Mov1ibGIWzgIOotjBpOC9jdr5fK1E--o/preview'>
+                <a target="_blank" href='https://docs.google.com/presentation/d/1CoxdSOmOlmeo9cmJoAsdw6vkEreZmHHz7ZMRBJUb3z0/edit?usp=sharing'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -42,11 +42,11 @@ const Fall = () => {
 
           {/* Card 2 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"10_20 Latino Parent Meeting.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">October 20, 2023</h2>
+              <h2 className="card-title">September 27, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1sp__isk4xsw_0wRVrDgTgKJo0WbYXBJeQuEJjdOq54Q/edit'>
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -55,11 +55,11 @@ const Fall = () => {
 
           {/* Card 3 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"11_17 Latino Parent Meeting.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">November 17, 2023</h2>
+              <h2 className="card-title">October 25, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1FkNS-36diDPjGmLz8Tmt3jDoM9XyTyw_OE8ICG-aclI/edit'>
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -68,11 +68,24 @@ const Fall = () => {
 
           {/* Card 4 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"12_15 Latino Parent Meeting.pdf"} />
+            <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">December 15, 2023</h2>
+              <h2 className="card-title">November 22, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/110wecOwZHL3ZRJznFnP0WW-mBe0PYuB4RRimAXOqPx4/edit'>
+                <a target="_blank" href='#'>
+                  <button className="btn bg-main text-white rounded-box">View</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
+            <PdfViewer file={"checkback.pdf"} />
+            <div className="card-body">
+              <h2 className="card-title">December 20, 2024</h2>
+              <div className="card-actions justify-end">
+                <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>

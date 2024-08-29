@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "ella": "url('/ella-bg-tint-black.png')",
+        "ella": "url('/ella-bg-new.png')",
       },
       colors: {
         "main": "#246C94",

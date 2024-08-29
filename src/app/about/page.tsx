@@ -14,12 +14,82 @@ const About = () => {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Meet Us</h1>
+      <h1 className="mb-5 text-5xl font-bold">About</h1>
       
     </div>
   </div>
 </div>
-        <h1 className="text-6xl text-main  text-center m-8 my-12 font-bold"></h1>
+        <h1 id="whoweare" className="text-6xl text-main  text-center m-8 my-12 font-bold">Who are we?</h1>
+        <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Mission</h1>
+        <p className=" text-lg w-3/4 mx-auto text-center">
+    Our mission is to empower our English Language Learners, <b className="text-main">especially our Latino students and families</b> at Silver Creek High School by establishing a bridge of communication, trust, and engagement between students and families, school staff (administrators, counselors, teachers) at Silver Creek by developing their leadership skills.
+  </p>
+  <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Vision</h1>
+  <div className=" text-lg w-3/4 mx-auto text-center">
+   <ol className="list-decimal mx-auto text-left">
+    <li className="m-2">Support our Silver Creek High School English Language Learner population while targeting Latino students.</li>
+    <li className="m-2">Organize and sponsor the English Learner and Latino Community of the school regarding issues related to the educational environment and their academic needs. The Committee will sponsor and coordinate workshops and initiatives to positively influence the educational environment and educational outcomes of target students.</li>
+    <li className="m-2">Develop parent agency and leadership to create a word-of-mouth invitation for other parents to join our meetings.</li>
+    <li className="m-2">Create a support group for students to provide them with tools for academic awareness and success such as:
+      <ol className="">
+        <li className="m-2">
+        --&gt; How to navigate through the US educational system
+        </li>
+        <li className="m-2">
+        --&gt; Understanding ESUHSD graduation and A-G requirements
+        </li>
+        <li className="m-2">
+        --&gt; College systems knowledge
+        </li>
+      </ol>
+    </li>
+    
+   </ol>
+
+
+
+  </div>
+  <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Objectives</h1>
+  <div className='text-lg w-3/4 mx-auto my-8 text-center'>
+  <ol className='list-disc mx-auto text-left'>
+            <li className='marker:w-9'>Support Latino English Language Learners</li>
+            <li>Organize Community Engagement</li>
+            <li>Foster Parental Involvement</li>
+            <li>Student Support</li>
+        </ol>
+
+  </div>
+  <div className='bg-slate-300 p-8'>
+  <h1 id="benefits" className="text-6xl text-main  text-center m-8 my-12 font-bold">Benefits</h1>
+  <div className='flex flex-wrap w-3/4 mx-auto'>
+    <div className='flex flex-col w-48 justify-start m-8'>
+        <div className='text-6xl text-main item-start text-center'>1.</div>
+        <div className='text-center text-2xl m-8'>Collaboration amongst teachers and counselors</div>
+    </div>
+    <div className='flex flex-col w-48 justify-start m-8'>
+        <div className='text-6xl text-main item-start bold text-center'>2.</div>
+        <div className='text-center text-2xl m-8'>Parent meetings</div>
+    </div>
+    <div className='flex flex-col w-48 justify-start m-8'>
+        <div className='text-6xl text-main item-start bold text-center'>3.</div>
+        <div className='text-center text-2xl m-8'>Community service opportunities</div>
+    </div>
+    <div className='flex flex-col w-48 justify-start m-8'>
+        <div className='text-6xl text-main item-start text-center'>4.</div>
+        <div className='text-center text-2xl m-8'>Field trips</div>
+    </div>
+    <div className='flex flex-col w-48 justify-start m-8'>
+        <div className='text-6xl text-main text-center'>5.</div>
+        <div className='text-center text-2xl m-8'>Outside presenters</div>
+    </div>
+
+    
+  </div>
+
+  </div>
+  
+        <h1 id="staff" className="text-6xl text-main  text-center m-8 my-12 font-bold">Staff</h1>
+
         <div className='flex justify-evenly flex-wrap m-8 my-0'>
             <div className="card bg-base-100 w-[27rem] m-4 shadow-xl">
                 <figure>
@@ -122,3 +192,7 @@ I want to be able to give back to the community that raised me and helped shape 
 }
 
 export default About;
+
+//who we are 
+//benefits
+//staff

@@ -39,13 +39,22 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <Link className='duration-500 text-bold hover:border hover:border-b-4 hover:border-b-main border-[white] p-4 md:p-0' href='/about'>
-            <div>About</div>
-          </Link>
+         
 
           <div className='dropdown dropdown-hover p-4 md:p-0'>
             <div tabIndex={0} role="button" className='flex text-bold items-center'>
-              Presentation <Image className='w-4 h-4 m-1' src={caret} width={1} height={1} alt='A dropdown menu for presentations.'/>
+              About <Image className='w-4 h-4 m-1' src={caret} width={1} height={1} alt='A dropdown menu for presentations.'/>
+            </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-main text-white text-base rounded-box z-[1] w-52 p-2 shadow">
+              <Link href='/about#whoweare'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Who We Are</li></Link>
+              <Link href='/about#benefits'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Benefits</li></Link>
+              <Link href='/about#staff'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Staff</li></Link>
+            </ul>
+          </div>
+
+          <div className='dropdown dropdown-hover p-4 md:p-0'>
+            <div tabIndex={0} role="button" className='flex text-bold items-center'>
+              Presentations <Image className='w-4 h-4 m-1' src={caret} width={1} height={1} alt='A dropdown menu for presentations.'/>
             </div>
             <ul tabIndex={0} className="dropdown-content menu bg-main text-white text-base rounded-box z-[1] w-52 p-2 shadow">
               <Link href='/fall'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Fall</li></Link>
@@ -65,7 +74,7 @@ const Navbar = () => {
           </div>
 
           <Link className='duration-500 text-bold hover:border hover:border-b-4 hover:border-b-main border-white p-4 md:p-0' href='/testimonials'>
-            <div>Testimonials</div>
+            <div>LPC</div>
           </Link>
           
         </div>
@@ -77,3 +86,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
