@@ -28,33 +28,33 @@ export default function Home() {
       document.body.appendChild(initScript);
     };
 
-    // Function to remove unwanted elements
-    const removeUnwantedTranslateElements = () => {
-      // Remove extra buttons or unwanted elements from Google Translate
-      const unwantedButtons = document.getElementsByClassName(
-        'VIpgJd-ZVi9od-xl07Ob-lTBxed'
-      );
-      // If there are more than one button, remove the extra ones
-      if (unwantedButtons.length > 1) {
-        for (let i = 1; i < unwantedButtons.length; i++) {
-          unwantedButtons[i].remove();
-        }
-      }
-    };
+    // // Function to remove unwanted elements
+    // const removeUnwantedTranslateElements = () => {
+    //   // Remove extra buttons or unwanted elements from Google Translate
+    //   const unwantedButtons = document.getElementsByClassName(
+    //     'VIpgJd-ZVi9od-xl07Ob-lTBxed'
+    //   );
+    //   // If there are more than one button, remove the extra ones
+    //   if (unwantedButtons.length > 1) {
+    //     for (let i = 1; i < unwantedButtons.length; i++) {
+    //       unwantedButtons[i].remove();
+    //     }
+    //   }
+    // };
 
     // Load the Google Translate script
     addGoogleTranslateScript();
 
-    // Attempt to clean up unwanted elements at intervals
-    const interval = setInterval(() => {
-      removeUnwantedTranslateElements();
-    }, 1000);
+    // // Attempt to clean up unwanted elements at intervals
+    // const interval = setInterval(() => {
+    //   removeUnwantedTranslateElements();
+    // }, 1000);
 
-    // Stop checking after a few seconds
-    setTimeout(() => clearInterval(interval), 5000);
+    // // Stop checking after a few seconds
+    // setTimeout(() => clearInterval(interval), 5000);
 
-    // Cleanup function to clear the interval on component unmount
-    return () => clearInterval(interval);
+    // // Cleanup function to clear the interval on component unmount
+    // return () => clearInterval(interval);
   }, []);
 
   return (

@@ -3,11 +3,63 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import dynamic from 'next/dynamic';
-
+import { useEffect } from 'react';
 // Dynamically import PdfViewer with SSR disabled
 const PdfViewer = dynamic(() => import('../components/PdfViewer'), { ssr: false });
 
 const Spring = () => {
+  useEffect(() => {
+    // Function to add Google Translate script to the page
+    const addGoogleTranslateScript = () => {
+      const script = document.createElement('script');
+      script.src =
+        '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.async = true;
+      document.body.appendChild(script);
+
+      // Adding the initialization script for Google Translate
+      const initScript = document.createElement('script');
+      initScript.text = `
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'es',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          }, 'google_translate_element');
+        }
+      `;
+      document.body.appendChild(initScript);
+    };
+
+    // Function to remove unwanted elements
+    const removeUnwantedTranslateElements = () => {
+      // Remove extra buttons or unwanted elements from Google Translate
+      const unwantedButtons = document.getElementsByClassName(
+        'VIpgJd-ZVi9od-xl07Ob-lTBxed'
+      );
+      // If there are more than one button, remove the extra ones
+      if (unwantedButtons.length > 1) {
+        for (let i = 1; i < unwantedButtons.length; i++) {
+          unwantedButtons[i].remove();
+        }
+      }
+    };
+
+    // Load the Google Translate script
+    addGoogleTranslateScript();
+
+    // Attempt to clean up unwanted elements at intervals
+    const interval = setInterval(() => {
+      removeUnwantedTranslateElements();
+    }, 1000);
+
+    // Stop checking after a few seconds
+    setTimeout(() => clearInterval(interval), 5000);
+
+    // Cleanup function to clear the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className='bg-[#f0f4fc] min-h-screen'>
       <Navbar />

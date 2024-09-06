@@ -78,7 +78,7 @@ const Navbar = () => {
           </Link>
           
         </div>
-        <div id="google_translate_element"></div>
+        <div className="my-auto mx-2" id="google_translate_element"></div>
       </ul>
       
     </nav>
