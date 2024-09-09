@@ -84,7 +84,7 @@ const Fall = () => {
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
             <PdfViewer file={"8_30 LPC meeting.pdf"} />
             <div className="card-body">
-            <h1 className="card-title font-bold text-main">Familiarizandose con nuestra escuela</h1>
+            <h1 className="card-title font-bold text-main">Getting Acquainted with Our School</h1>
               <h2 className="card-title text-base font-normal">August 30, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='https://docs.google.com/presentation/d/1CoxdSOmOlmeo9cmJoAsdw6vkEreZmHHz7ZMRBJUb3z0/edit?usp=sharing'>
@@ -98,8 +98,8 @@ const Fall = () => {
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-            <h1 className="card-title text-main">Como tener exito en la escuela</h1>
-              <h2 className="card-title text-base font-normal">August 30, 2024</h2>
+            <h1 className="card-title text-main">How to Be Successful in School</h1>
+              <h2 className="card-title text-base font-normal">September 27, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -112,7 +112,8 @@ const Fall = () => {
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">October 25, 2024</h2>
+            <h1 className="card-title text-main">How to Get to College and A-G Requirements</h1>
+            <h2 className="card-title text-base font-normal">October 25, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -125,7 +126,8 @@ const Fall = () => {
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">November 22, 2024</h2>
+            <h1 className="card-title text-main">Let's Talk About Finals</h1>
+            <h2 className="card-title text-base font-normal">November 22, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -138,7 +140,8 @@ const Fall = () => {
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">December 20, 2024</h2>
+            <h1 className="card-title text-main">Let's Celebrate and Have a Posada</h1>
+            <h2 className="card-title text-base font-normal">December 20, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>

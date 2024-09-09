@@ -83,7 +83,8 @@ const Spring = () => {
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">January 24, 2025</h2>
+            <h1 className="card-title text-main">How to Read a Transcript</h1>
+            <h2 className="card-title text-base font-normal">January 24, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -96,7 +97,8 @@ const Spring = () => {
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">February 28, 2025</h2>
+            <h1 className="card-title text-main">Learning Strategies</h1>
+            <h2 className="card-title text-base font-normal">February 28, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -109,7 +111,8 @@ const Spring = () => {
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">March 28, 2025</h2>
+            <h1 className="card-title text-main">How to Get Ready For the Summer</h1>
+            <h2 className="card-title text-base font-normal">March 28, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -122,7 +125,8 @@ const Spring = () => {
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">April 11, 2025</h2>
+            <h1 className="card-title text-main">Let's Talk About Finals</h1>
+            <h2 className="card-title text-base font-normal">April 11, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
@@ -135,7 +139,8 @@ const Spring = () => {
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
             <PdfViewer file={"checkback.pdf"} />
             <div className="card-body">
-              <h2 className="card-title">May 16, 2025</h2>
+            <h1 className="card-title text-main">Parent & Student Graduation</h1>
+            <h2 className="card-title text-base font-normal">May 16, 2024</h2>
               <div className="card-actions justify-end">
                 <a target="_blank" href='#'>
                   <button className="btn bg-main text-white rounded-box">View</button>
