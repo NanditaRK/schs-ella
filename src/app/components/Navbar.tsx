@@ -49,6 +49,7 @@ const Navbar = () => {
               <Link href='/about#whoweare'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Who We Are</li></Link>
               <Link href='/about#benefits'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Benefits</li></Link>
               <Link href='/about#staff'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Staff</li></Link>
+              <Link href='/testimonials'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Latino Parent Coalition</li></Link>
             </ul>
           </div>
 
@@ -73,9 +74,6 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <Link className='duration-500 text-bold hover:border hover:border-b-4 hover:border-b-main border-white p-4 md:p-0' href='/testimonials'>
-            <div>LPC</div>
-          </Link>
           
         </div>
         <div className="my-auto mx-2" id="google_translate_element"></div>

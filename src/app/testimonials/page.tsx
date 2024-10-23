@@ -94,6 +94,8 @@ const Testimonials = () => {
                     <p>Adriana Partida y Claudia Lopez
 
                     </p>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:adi.flaca@yahoo.com'> adi.flaca@yahoo.com</a> </div>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:claulopez622@gmail.com'> claulopez622@gmail.com</a> </div>
                     
                 </div>
             </div>
@@ -106,8 +108,10 @@ const Testimonials = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Vice Presidents</h2>
-                    <p>Elva Rojas y Mayra Muñoz
-</p>
+                    <p>Elva Rojas y Mayra Muñoz</p>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:elva.e72@gmail.com'> elva.e72@gmail.com</a> </div>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:mayrasoreque@icloud.com'> mayrasoreque@icloud.com</a> </div>
+
                     
                 </div>
             </div>
@@ -121,10 +125,10 @@ const Testimonials = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Treasurers</h2>
-                    <p>Marisol Escarcega y Señor Leal
+                    <p>Marisol Escarcega y Señor Leal</p>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:lealm@esuhsd.org'>lealm@esuhsd.org </a> </div>
 
-
-</p>
                     
                 </div>
             </div>
@@ -139,6 +143,9 @@ const Testimonials = () => {
                 <div className="card-body">
                     <h2 className="card-title">Secretaries</h2>
                     <p>Grace Gutierrez y Señor Camacho </p>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+                    <div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:camachoa@esuhsd.org'>camachoa@esuhsd.org </a> </div>
+
                     
                 </div>
             </div>
@@ -158,6 +165,12 @@ Evangelina Rivera
 
 
 </p>
+<div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+<div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+<div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+<div className='flex'><img className='m-2' src='/mail.svg' /><a className='m-2' href='mailto:'> </a> </div>
+
+
                     
                 </div>
             </div>
