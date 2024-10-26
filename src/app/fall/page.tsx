@@ -115,7 +115,7 @@ const Fall = () => {
             <h1 className="card-title text-main">How to Get to College and A-G Requirements</h1>
             <h2 className="card-title text-base font-normal">October 25, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='#'>
+                <a target="_blank" href='https://docs.google.com/presentation/d/1ghRRITQVfpxyt4wFZp6eKHGyG83GVnMDFFwKMkpL7gA/edit?usp=sharing'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
