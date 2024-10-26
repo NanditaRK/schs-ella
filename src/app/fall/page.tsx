@@ -110,7 +110,7 @@ const Fall = () => {
 
           {/* Card 3 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"checkback.pdf"} />
+            <PdfViewer file={"_10_25 LPC meeting presentation.pdf"} />
             <div className="card-body">
             <h1 className="card-title text-main">How to Get to College and A-G Requirements</h1>
             <h2 className="card-title text-base font-normal">October 25, 2024</h2>
