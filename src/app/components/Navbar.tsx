@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Original Logo - Hidden when menu is open */}
         <Link href='/'>
           <div className={`${isOpen ? 'hidden' : 'block'}`}>
-            <Image src={logo} width={100} height={100} alt='SCHS ELLA Logo' />
+            <Image src={logo} width={100} height={100} alt='SCHS LPC Logo' />
           </div>
         </Link>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
           {/* Logo inside the mobile menu */}
           <div className='block md:hidden p-4'>
             <Link href='/'>
-              <Image src={logo} width={80} height={80} alt='SCHS ELLA Logo' />
+              <Image src={logo} width={80} height={80} alt='SCHS LPC Logo' />
             </Link>
           </div>
 
@@ -74,6 +74,14 @@ const Navbar = () => {
             </ul>
           </div>
 
+          <div className='dropdown dropdown-hover p-4 md:p-0'>
+            <div tabIndex={0} role="button" className='flex text-bold items-center'>
+              Events <Image className='w-4 h-4 m-1' src={caret} width={1} height={1} alt='A dropdown menu for events.'/>
+            </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-main text-white text-base rounded-box z-[1] w-52 p-2 shadow">
+              <Link href='/diadelosmuertos'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Día De Los Muertos</li></Link>
+            </ul>
+          </div>
           
         </div>
         <div className="my-auto mx-2" id="google_translate_element"></div>
