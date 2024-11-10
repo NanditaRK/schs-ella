@@ -80,6 +80,36 @@ const DiaDeLosMuertos = () => {
   </div>
 
   <h1 className="text-6xl text-main  text-center m-8 my-12 font-bold">People</h1>
+  <div className="carousel bg-main rounded-3xl py-4 mx-2 w-fit">
+    {people.map((url, index)=>{
+      console.log(index)
+      return <div key={`people-carousel-${index}`} id={"peopleSlide"+(index+1)}className="carousel-item relative w-full">
+      <img
+        src={url}
+        className=" mx-auto h-[48rem]" />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href={"#peopleSlide"+index} className="btn btn-circle">❮</a>
+        <a href={"#peopleSlide"+(index+2)} className="btn btn-circle">❯</a>
+      </div>
+    </div>
+    })}
+    
+  
+
+  
+  </div>
+  <div className='flex flex-col lg:flex-row'>
+<img className='m-2 w-36 lg:h-36 lg:w-auto' src='/diadelosmuertos/sugarSkull.png'/>
+  
+  <blockquote className="p-4 w-3/4 mx-auto my-4 border-s-8 border-main bg-blue-100 dark:border-gray-500 dark:bg-gray-800">
+    <p className="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Dia de los Muertos is more than just a celebration; it’s a gathering of hearts and memories. This year, we witnessed laughter, joy, and connection as friends and families came together to honor loved ones. Watching traditional dances and performances, our community was immersed in the vibrant expressions of culture, embracing the beauty of remembrance together."
+
+</p>
+</blockquote>
+<img className='m-2 w-36 lg:h-36 lg:w-auto ml-auto' src='/diadelosmuertos/ofrenda.png' />
+
+</div>
+
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
 
@@ -93,6 +123,36 @@ const DiaDeLosMuertos = () => {
 
 
           <h1 className="text-6xl text-main  text-center m-8 my-12 font-bold">Activities</h1>
+          <div className="carousel bg-main rounded-3xl py-4 mx-2 w-fit">
+    {activities.map((url, index)=>{
+      console.log(index)
+      return <div key={`activities-carousel-${index}`} id={"activitiesSlide"+(index+1)}className="carousel-item relative w-full">
+      <img
+        src={url}
+        className=" mx-auto h-[48rem]" />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href={"#activitiesSlide"+index} className="btn btn-circle">❮</a>
+        <a href={"#activitiesSlide"+(index+2)} className="btn btn-circle">❯</a>
+      </div>
+    </div>
+    })}
+    
+  
+
+  
+  </div>
+  <div className='flex flex-col lg:flex-row'>
+<img className='w-36 lg:w-auto lg:h-36 m-2' src='/diadelosmuertos/loteria.png'/>
+  
+  <blockquote className="p-4 w-3/4 mx-auto my-4 border-s-8 border-main bg-blue-100 dark:border-gray-500 dark:bg-gray-800">
+    <p className="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"Our Dia de los Muertos event was filled with meaningful and engaging activities that brought tradition to life. Participants crafted paper marigold flowers, decorated colorful ofrendas, played lively rounds of Lotería, and enjoyed captivating folkloric dance performances. Each activity offered a unique way to celebrate, connect, and honor the spirit of this cherished tradition."
+
+</p>
+</blockquote>
+<img className='m-2 w-36 lg:h-36 lg:w-auto ml-auto' src='/diadelosmuertos/folklorico.png' />
+
+</div>
+
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
 
