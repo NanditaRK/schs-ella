@@ -124,12 +124,12 @@ const Fall = () => {
 
           {/* Card 4 */}
           <div className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
-            <PdfViewer file={"checkback.pdf"} />
+            <PdfViewer file={"11_22 lpc meeting presentation.pdf"} />
             <div className="card-body">
             <h1 className="card-title text-main">Let's Talk About Finals</h1>
             <h2 className="card-title text-base font-normal">November 22, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='#'>
+                <a target="_blank" href='https://docs.google.com/presentation/d/1P_IFsZdPpeiQmOOalB1YM_KnQGVeBo4ZDx4_jpE3OxU/edit?usp=sharing'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
@@ -150,6 +150,8 @@ const Fall = () => {
             </div>
           </div>
 
+
+       
         </div>
       </div>
     </div>

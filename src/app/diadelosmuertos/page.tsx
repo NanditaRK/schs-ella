@@ -111,15 +111,7 @@ const DiaDeLosMuertos = () => {
 </div>
 
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-
-              {people.map((url, index)=>{
-                  return <div key={`people-${index}`} className=' bg-black rounded-lg flex flex-col justify-center items-center'>
-                  <img className="h-auto max-w-full rounded-lg" src={url} alt="" />
-              </div>
-              })}
-
-          </div>
+         
 
 
           <h1 className="text-6xl text-main  text-center m-8 my-12 font-bold">Activities</h1>
@@ -154,15 +146,7 @@ const DiaDeLosMuertos = () => {
 </div>
 
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-
-              {activities.map((url, index)=>{
-                  return <div key={`activities-${index}`} className=' bg-black rounded-lg flex flex-col justify-center items-center'>
-                  <img className="h-auto max-w-full rounded-lg" src={url} alt="" />
-              </div>
-              })}
-
-          </div>
+          
         </div>
     </div>
   )
