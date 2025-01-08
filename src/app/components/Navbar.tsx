@@ -81,7 +81,7 @@ const Navbar = () => {
             <ul tabIndex={0} className="dropdown-content menu bg-main text-white text-base rounded-box z-[1] w-52 p-2 shadow">
               <Link href='/diadelosmuertos'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Día De Los Muertos</li></Link>
               <Link href='/diadelosaccionesdegracias'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Dia de los acciones de gracias</li></Link>
-
+              <Link href='/posadas'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Las Posadas</li></Link>
             </ul>
             
           </div>
