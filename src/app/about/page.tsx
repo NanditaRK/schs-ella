@@ -74,7 +74,7 @@ const About = () => {
 </div>
         <h1 id="whoweare" className="text-6xl text-main  text-center m-8 my-12 font-bold">Who are we?</h1>
         <div className='flex m-4 justify-center'>
-            <iframe src="https://drive.google.com/file/d/1QRJSqVu9VR-7OxBMM63y-E765IjSPH94/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1dYBC_ZbtXII4HvI2WK1xbwOPMKIEGlab/preview" width="640" height="480" allow="autoplay"></iframe>
             </div>
         <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Mission</h1>
         <p className=" text-lg w-3/4 mx-auto text-center">
