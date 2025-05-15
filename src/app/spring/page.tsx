@@ -123,12 +123,12 @@ const Spring = () => {
 
           {/* Card 4 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"checkback.pdf"} />
+            <PdfViewer file={"la red de respuesta rapida en el condado de santa clara.pdf"} />
             <div className="card-body">
-            <h1 className="card-title text-main">Let's Talk About Finals</h1>
+            <h1 className="card-title text-main">The Rapid Response Network in Santa Clara County</h1>
             <h2 className="card-title text-base font-normal">April 11, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='#'>
+                <a target="_blank" href='https://www.canva.com/design/DAGkW3qxxnE/XUiA_yWG4g18Qrbhu9BYxg/view?utm_content=DAGkW3qxxnE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3711df782e#1'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
