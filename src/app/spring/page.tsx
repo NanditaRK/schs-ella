@@ -137,12 +137,12 @@ const Spring = () => {
 
           {/* Card 4 */}
           <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"checkback.pdf"} />
+            <PdfViewer file={"5_9 LPC_ELAC meeting.pdf"} />
             <div className="card-body">
             <h1 className="card-title text-main">Parent & Student Graduation</h1>
             <h2 className="card-title text-base font-normal">May 16, 2024</h2>
               <div className="card-actions justify-end">
-                <a target="_blank" href='#'>
+                <a target="_blank" href='https://docs.google.com/presentation/d/1He3OPr9Of3_RPiSdHNzbyrxud7tR2y-RwCwp-C_Ef_Y/edit?usp=sharing'>
                   <button className="btn bg-main text-white rounded-box">View</button>
                 </a>
               </div>
