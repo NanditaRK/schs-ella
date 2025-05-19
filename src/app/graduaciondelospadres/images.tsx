@@ -1,0 +1,2 @@
+const images = ["graduaciondelospadres/Screenshot 2025-05-17 at 8.46.19 PM.png", "graduaciondelospadres/Screenshot 2025-05-17 at 8.47.50 PM.png", "graduaciondelospadres/Screenshot 2025-05-17 at 8.48.13 PM.png"  ];
+export default images;

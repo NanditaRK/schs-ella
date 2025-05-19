@@ -82,6 +82,7 @@ const Navbar = () => {
               <Link href='/diadelosmuertos'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Día De Los Muertos</li></Link>
               <Link href='/diadelosaccionesdegracias'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Dia de los acciones de gracias</li></Link>
               <Link href='/posadas'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Las Posadas</li></Link>
+              <Link href='/graduaciondelospadres'><li className='m-0 p-4 hover:bg-slate-400 rounded-box'>Graduación de padres</li></Link>
             </ul>
             
           </div>
