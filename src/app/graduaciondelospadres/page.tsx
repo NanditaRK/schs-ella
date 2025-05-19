@@ -89,8 +89,8 @@ const Graduacion = () => {
    
  {images.map((url:string, index:number)=>{
             return (
-                <div className='bg-main flex m-4 p-4 justify-center grow wrap '> 
-                    <img className='' src={url}/>
+                <div key={index} className='bg-main flex m-4 p-4 justify-center grow wrap '> 
+                    <img className='' src={url} alt={`Graduacion ${index}`}/>
                 </div>
             
         )
