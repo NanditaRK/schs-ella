@@ -56,56 +56,56 @@ const Graduacion = () => {
     // Cleanup function to clear the interval on component unmount
     return () => clearInterval(interval);
   }, []);
-    
-    
+
+
 
   return (
     <div className='bg-[#f0f4fc] min-h-screen'>
-        <Navbar />
-        <div className='my-0'>
+      <Navbar />
+      <div className='my-0'>
         <div
-  className="hero min-h-[50vh]"
-  style={{
-    backgroundImage: "url(/bg-ella-new.png)",
-  }}>
-  <div className="hero-overlay bg-opacity-60"></div>
-    <div className="hero-content text-neutral-content text-center">
-      <div className="max-w-md">
-        <h1 className="mb-5 md:text-5xl text-3xl font-bold">Graduación de padres</h1>
-       
-        
-      </div>
-      
-    </div>
-   
-  </div>
-  
-  <div className='flex grow flex-col justify-center wrap'>
-      <div className='bg-main flex m-4 p-4 justify-center grow wrap '>
-<video src='graduaciondelospadres/IMG_4666.mov' width="750" height="500" controls>
-     </video>
- </div>
+          className="hero min-h-[50vh]"
+          style={{
+            backgroundImage: "url(/bg-ella-new.png)",
+          }}>
+          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-content text-neutral-content text-center">
+            <div className="max-w-md">
+              <h1 className="mb-5 md:text-5xl text-3xl font-bold">Graduación de padres</h1>
+            </div>
+
+          </div>
+
         </div>
-   
- {images.map((url:string, index:number)=>{
-            return (
-                <div key={index} className='bg-main flex m-4 p-4 justify-center grow wrap '> 
-                    <img className='' src={url} alt={`Graduacion ${index}`}/>
-                </div>
-            
-        )
+
+        <div className='flex justify-center wrap'>
+          <div className='bg-main flex m-4 h-[50rem] p-4 justify-center grow wrap '>
+            <video src='graduaciondelospadres/IMG_4666.mov' controls>
+            </video>
+          </div>
+        </div>
+          <div className='flex '>
+
+        {images.map((url: string, index: number) => {
+          return (
+            <div key={index} className='bg-main flex m-4 p-4 justify-center grow wrap '>
+              <img className='' src={url} alt={`Graduacion ${index}`} />
+            </div>
+
+          )
         })}
-
-      
-         
+        </div>
 
 
-  
 
-  
-</div>
-</div>
-  
+
+
+
+
+
+      </div>
+    </div>
+
   )
 }
 
