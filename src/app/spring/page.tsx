@@ -1,13 +1,41 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
+import {supabase} from '@/app/utils/supabase';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+
+
 // Dynamically import PdfViewer with SSR disabled
 const PdfViewer = dynamic(() => import('../components/PdfViewer'), { ssr: false });
 
+type Presentation = {
+  id: number;
+  title: string;
+  date: string;
+  file_url: string;
+  folder: string;
+};
+
 const Spring = () => {
+  const [presentations, setPresentations] = useState<Presentation[]>([]);
+
+  useEffect(() => {
+    const fetchSpringPresentations = async () => {
+      const { data, error } = await supabase.from('presentations').select('*').eq('folder', 'spring');
+
+      if (error) {
+        console.error('Error fetching presentations:', error);
+      } else {
+        setPresentations(data || []);
+      }
+    };
+
+    fetchSpringPresentations();
+  }, []);
+
   useEffect(() => {
     // Function to add Google Translate script to the page
     const addGoogleTranslateScript = () => {
@@ -34,11 +62,9 @@ const Spring = () => {
 
     // Function to remove unwanted elements
     const removeUnwantedTranslateElements = () => {
-      // Remove extra buttons or unwanted elements from Google Translate
       const unwantedButtons = document.getElementsByClassName(
         'VIpgJd-ZVi9od-xl07Ob-lTBxed'
       );
-      // If there are more than one button, remove the extra ones
       if (unwantedButtons.length > 1) {
         for (let i = 1; i < unwantedButtons.length; i++) {
           unwantedButtons[i].remove();
@@ -49,21 +75,19 @@ const Spring = () => {
     // Load the Google Translate script
     addGoogleTranslateScript();
 
-    // Attempt to clean up unwanted elements at intervals
     const interval = setInterval(() => {
       removeUnwantedTranslateElements();
     }, 1000);
 
-    // Stop checking after a few seconds
     setTimeout(() => clearInterval(interval), 5000);
 
-    // Cleanup function to clear the interval on component unmount
     return () => clearInterval(interval);
   }, []);
+
   return (
-    <div className='bg-[#f0f4fc] min-h-screen'>
+    <div className="bg-[#f0f4fc] min-h-screen">
       <Navbar />
-      <div className='my-0'>
+      <div className="my-0">
         <div
           className="hero min-h-[50vh]"
           style={{
@@ -78,81 +102,30 @@ const Spring = () => {
           </div>
         </div>
 
-        <div className='flex justify-evenly flex-wrap my-0'>
-          {/* Card 1 */}
-          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"Revised 1_24 Cohort Meeting.pdf"} />
-            <div className="card-body">
-            <h1 className="card-title text-main">Welcome Back to Second Semester!</h1>
-            <h2 className="card-title text-base font-normal">January 24, 2025</h2>
-              <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1iy_URaIXxADjKBpZVeY6znRwLUDbbCx5ajQpKagfYrI/edit?usp=sharing'>
-                  <button className="btn bg-main text-white rounded-box">View</button>
-                </a>
+        <div className="flex justify-evenly flex-wrap my-0">
+          {presentations.map((presentation) => (
+            <div key={presentation.id} className="card h-fit bg-base-100 my-8 w-96 shadow-xl">
+              <PdfViewer file={presentation.file_url} />
+              <div className="card-body">
+                <h1 className="card-title font-bold text-main">{presentation.title}</h1>
+                <h2 className="card-title text-base font-normal">
+  {new Date(presentation.date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })}
+</h2>                <div className="card-actions justify-end">
+                  <a target="_blank" href={presentation.file_url} rel="noopener noreferrer">
+                    <button className="btn bg-main text-white rounded-box">View</button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"_latest 2_28_25 Segunda Presentacion.pdf"} />
-            <div className="card-body">
-            <h1 className="card-title text-main">Learning Strategies</h1>
-            <h2 className="card-title text-base font-normal">February 28, 2024</h2>
-              <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1krS-V33R1_J7xY6ApmrCPUTvDX4Vk1arA3hkmOdfTJ4/edit?usp=sharing'>
-                  <button className="btn bg-main text-white rounded-box">View</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"_3_28 Latino Parent Cohort Meeting - Extracurriculars.pdf"} />
-            <div className="card-body">
-            <h1 className="card-title text-main">How to Get Ready For the Summer</h1>
-            <h2 className="card-title text-base font-normal">March 28, 2025</h2>
-              <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1Yv37Grb_KPOfbVMSaMBVcS3Ku0IZ-ejyzxvU3dwj5fI/edit?usp=sharing'>
-                  <button className="btn bg-main text-white rounded-box">View</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"la red de respuesta rapida en el condado de santa clara.pdf"} />
-            <div className="card-body">
-            <h1 className="card-title text-main">The Rapid Response Network in Santa Clara County</h1>
-            <h2 className="card-title text-base font-normal">April 11, 2024</h2>
-              <div className="card-actions justify-end">
-                <a target="_blank" href='https://www.canva.com/design/DAGkW3qxxnE/XUiA_yWG4g18Qrbhu9BYxg/view?utm_content=DAGkW3qxxnE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3711df782e#1'>
-                  <button className="btn bg-main text-white rounded-box">View</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="card h-fit bg-base-100 w-96 my-8 shadow-xl">
-            <PdfViewer file={"5_9 LPC_ELAC meeting.pdf"} />
-            <div className="card-body">
-            <h1 className="card-title text-main">Parent & Student Graduation</h1>
-            <h2 className="card-title text-base font-normal">May 16, 2024</h2>
-              <div className="card-actions justify-end">
-                <a target="_blank" href='https://docs.google.com/presentation/d/1He3OPr9Of3_RPiSdHNzbyrxud7tR2y-RwCwp-C_Ef_Y/edit?usp=sharing'>
-                  <button className="btn bg-main text-white rounded-box">View</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
+          ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Spring;
