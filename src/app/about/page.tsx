@@ -212,7 +212,7 @@ const About = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Mr. Anchondo</h2>
-                    <p>Enter information here. </p>
+                    <p>I am the Parent & Communications Involvement Specialist at Silver Creek High School. </p>
                     
                 </div>
             </div>
