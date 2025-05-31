@@ -105,6 +105,30 @@ const About = () => {
 
 
   </div>
+  <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Meeting Dates</h1>
+  <div className='text-lg w-3/4 mx-auto my-8 flex flex-row justify-around text-center'>
+  <div>
+  <h2 className="text-2xl text-main  text-center m-8 my-12 font-bold">Fall</h2>
+  <ol className='list-disc mx-auto text-left'>
+            <li className='marker:w-9'>August 29, 2025</li>
+            <li>September 26, 2025</li>
+            <li>October 24, 2025</li>
+            <li>November 21, 2025</li>
+            <li>December 19, 2025</li>
+        </ol>
+  </div>
+<div>
+        <h2 className="text-2xl text-main  text-center m-8 my-12 font-bold">Spring</h2>
+  <ol className='list-disc mx-auto text-left'>
+            <li className='marker:w-9'>January 23, 2026</li>
+            <li>February 27, 2026</li>
+            <li>March 27, 2026</li>
+            <li>April 10, 2026</li>
+            <li>May 15, 2026</li>
+        </ol>
+        </div>
+
+  </div>
   <h1 className="text-4xl text-black  text-center m-8 my-12 font-bold">Objectives</h1>
   <div className='text-lg w-3/4 mx-auto my-8 text-center'>
   <ol className='list-disc mx-auto text-left'>
@@ -162,22 +186,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="card bg-base-100 w-[27rem] m-4 shadow-xl">
-                <figure>
-                    <img
-                    src="/nguyen.png"
-                    alt="Ms. Nguyen" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">Ms. Nguyen</h2>
-                    <p>I am a first-generation Vietnamese immigrant and proud graduate of Silver Creek.
-
-I want to be able to give back to the community that raised me and helped shape who I am today. I wish to share with students my passion for math and instill in them the habits to be successful.
-
-</p>
-                    
-                </div>
-            </div>
+            
 
             <div className="card bg-base-100 w-[27rem] m-4 shadow-xl">
                 <figure>
@@ -203,7 +212,7 @@ I want to be able to give back to the community that raised me and helped shape 
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Mr. Anchondo</h2>
-                    <p>lorem ipsum dolor mit amet lorem ipsum dolor mit amet lorem ipsum dolor mit amet lorem ipsum dolor mit amet lorem ipsum dolor mit amet </p>
+                    <p>Enter information here. </p>
                     
                 </div>
             </div>
@@ -211,14 +220,13 @@ I want to be able to give back to the community that raised me and helped shape 
             <div className="card bg-base-100 w-[27rem] m-4 shadow-xl">
                 <figure>
                     <img
-                    src="/camacho.png"
-                    alt="Mr. Camacho" />
+                    src="/loveday.png"
+                    alt="Ms. Loveday" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">Mr. Camacho</h2>
-                    <p>I am a first-generation Mexicano-Chicano and a proud product of migrantes who nurtured me with cariño and taught me respect. I will work hard to encourage our students to shoot for success. 
-
-</p>
+                    <h2 className="card-title">Ms. Loveday</h2>
+                    <p>Enter information here.
+                    </p>
                     
                 </div>
             </div>
