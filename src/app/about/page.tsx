@@ -225,7 +225,8 @@ const About = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">Ms. Loveday</h2>
-                    <p>Enter information here.
+                    <p>My name is Brooke Loveday. I was born and raised in East San Jose. I attended community college while working, until I was able to transfer to San Jose State. That is where I earned both my bachelor's degree in English and my teaching credential. Dedicated to contributing to my community, I decided to teach English in ESUHSD. I was the first in my family to attend college. To further my ability to support students in need, I returned to school in 2022-2023 to earn a master's degree in Social-Emotional Learning and Development. I am honored and excited to be a part of the Latino Student Cohort. 
+
                     </p>
                     
                 </div>
